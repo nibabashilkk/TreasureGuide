@@ -1,0 +1,7 @@
+xiaoliu\life\dao\mapper\UserMapper.class
+xiaoliu\life\dao\mapper\ArticleMapper.class
+xiaoliu\life\dao\mapper\EssayMapper.class
+xiaoliu\life\dao\mapper\CategoryMapper.class
+xiaoliu\life\dao\mapper\ImageMapper.class
+xiaoliu\life\dao\mapper\Openid2articleidsMapper.class
+xiaoliu\life\dao\config\MybatisPlusObjectHandler.class

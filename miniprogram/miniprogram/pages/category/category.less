@@ -1,0 +1,58 @@
+page{
+    background-color: #f7f9fe;
+}
+.contain{
+    width:100vw;
+    height:100vh;
+    overflow-y:scroll
+    }
+.contain::-webkit-scrollbar{
+    width:0;    
+    height:0;
+    color:transparent;
+    display:none
+}
+.layout{
+    padding: 0 1rem;
+    height: 100%;
+    background-color: #f7f9fe;
+}
+.main{
+    .header{
+        margin-top: 1rem;
+        background-color: white;
+        border-radius: 8px;
+        padding: 1rem;
+        border: 1px solid #e0e3ed;
+        .title{
+            font-weight: bold;
+            color: chocolate;
+        }
+        .desc{
+            font-size: 14px;
+            margin-top: 10px;
+            color: #858585;
+        }
+    }
+    .content{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0px 1rem;
+        border: 1px solid #e0e3ed;
+        background-color: white;
+        border-radius: 8px;
+        .item{    
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .title{
+                font-weight: bold;
+                color:darkgreen;
+            }
+            .time{
+                font-size: 14px;
+                margin-top: 10px;
+                color: #858585;
+            }
+        }
+    }
+}

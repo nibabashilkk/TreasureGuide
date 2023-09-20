@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "bar-btn":"../../components/bar-btn/index",
+        "toast": "../../components/toast/index"
+    },
+    "navigationBarBackgroundColor": "#fa3534",
+    "backgroundColorBottom": "#ffffff",
+    "backgroundColorTop": "#fa3534"
+}

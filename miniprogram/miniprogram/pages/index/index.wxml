@@ -1,0 +1,52 @@
+<view class="layout">
+    <view class="main">
+        <view class="header">
+            <view class="title">
+                <text>宝藏指北</text>
+            </view>
+            <view class="desc">
+                <text>只分享互联网上真正的宝藏——宝藏指南小程序版</text>
+            </view>
+        </view>
+        <view id="search">
+            <van-search style="border-radius: 8px;"
+                value="{{ value }}"
+                shape="round"
+                background="#ffffff"
+                bind:change="onChange"
+                bind:focus="onFocue"
+                bind:blur="onBlur"
+                placeholder="请输入搜索关键词"
+                custom-class="search-main"
+            />
+        </view>
+        <view id="categories" wx:if="{{isShow}}">
+            <view class="items">
+                <view wx:for="{{categoryList}}" wx:for-item="category" class="item" bind:tap="clickToNav" data-category="{{category}}"> 
+                    <view class="first-line">
+                        <view class="title">
+                            {{category.categoryName}}
+                        </view>
+                    </view>
+                    <view class="second-line">
+                        <view class="desc">
+                            {{category.categoryNameEn}}
+                        </view>
+                    </view>
+                </view>    
+            </view>
+        </view>
+        <view class="search-content" wx:if="{{!isShow && data}}">
+            <view wx:for="{{data}}" wx:key="id" wx:for-item="data">
+                <view class="item" bind:tap="clickToDetail" data-data="{{data}}" >
+                    <view class="title">
+                        {{data.title}}
+                    </view>
+                    <view class="content">
+                        {{data.content}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

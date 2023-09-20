@@ -1,0 +1,66 @@
+.tabbar {
+  /* padding-bottom: calc(10px + constant(safe-area-inset-bottom));
+  padding-bottom: calc(10px + env(safe-area-inset-bottom)); */
+  @height    : 40px;
+  @width     : 40px;
+  @gap       : 30px;
+  @padding-tb: 6px;
+  @padding-lr: 6px;
+
+  display         : flex;
+  justify-content : center;
+  position        : fixed;
+  width           : fit-content;
+  bottom          : calc(10px + constant(safe-area-inset-bottom));
+  bottom          : calc(10px + env(safe-area-inset-bottom));
+  left            : 0;
+  right           : 0;
+  margin          : 0 auto;
+  background-color: rgba(144,147,153,0.13);
+  padding         : @padding-tb @padding-lr;
+  border-radius   : @height;
+  overflow        : hidden;
+  box-shadow      : 3px 5px 9px 0px #0d152369;
+  /* transition      : transform .3s; */
+
+  &.show {
+    transition      : transform .3s;
+    transform: translateY(0);
+  }
+
+  &.hide {
+    transform: translateY(200px);
+  }
+
+  .tabbar-item {
+    height     : @height;
+    width      : @width;
+    text-align : center;
+    line-height: @height;
+    color      : #4c4948;
+    font-size  : 18px;
+
+    +.tabbar-item {
+      margin-left: @gap;
+    }
+
+    &.activce {
+      font-weight     : bold;
+      border-radius   : 50%;
+      background-color: rgb(106, 118, 226);
+      box-shadow      : 2px 3px 9px 0px #4f4dd3d2;
+      color: white;
+    }
+  }
+
+  .tabbar_bar {
+    background-color   : rgb(85, 189, 250);
+    height             : 4px;
+    width              : calc(@width / 2);
+    position           : absolute;
+    left               : calc(@padding-lr + @width / 4);
+    bottom             : @padding-tb;
+    border-radius      : 4px;
+    /* transition      : transform .3s; */
+  }
+}

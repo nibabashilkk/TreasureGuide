@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bar-btn":"../../components/bar-btn/index",
+    "toast": "../../components/toast/index"
+  }
+}

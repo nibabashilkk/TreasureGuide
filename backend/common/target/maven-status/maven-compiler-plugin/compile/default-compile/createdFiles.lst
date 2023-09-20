@@ -1,0 +1,6 @@
+xiaoliu\life\common\util\RestTemplateUtil.class
+xiaoliu\life\common\config\ZincProperties.class
+xiaoliu\life\common\util\Base64Util.class
+xiaoliu\life\common\util\ZincUtil.class
+xiaoliu\life\common\util\RedisUtil.class
+xiaoliu\life\common\util\WxMappingJackson2HttpMessageConverter.class

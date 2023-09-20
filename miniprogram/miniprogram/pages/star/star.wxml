@@ -1,0 +1,25 @@
+<view class="layout">
+    <view class="main">
+        <view class="header">
+            <view class="title">
+                <text>宝藏指北</text>
+            </view>
+            <view class="desc">
+                <text>只分享互联网上真正的宝藏——宝藏指南小程序版</text>
+            </view>
+        </view>
+        <view class="content" wx:if="{{data}}">
+            <view wx:for="{{data}}" wx:key="id" wx:for-item="data">
+                <view class="item" bind:tap="clickToNav" data-data="{{data}}" >
+                    <view class="title">
+                        {{data.title}}
+                    </view>
+                    <view class="time">
+                        {{data.createTime}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<toast id="toast" />

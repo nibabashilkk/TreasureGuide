@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xiaoliu.life.dao.mapper.ArticleMapper">
+    <select id="getArticleByCategoryId" resultType="xiaoliu.life.model.entity.Article">
+        select * from article where category_id = #{categoryId} and is_shared = true and is_visible = true
+    </select>
+</mapper>

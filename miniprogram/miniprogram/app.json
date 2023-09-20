@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/category/category",
+    "pages/detail/detail",
+    "pages/star/star",
+    "pages/commit/commit"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/commit/commit",
+        "text": "提交"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f7f9fe",
+    "navigationBarTitleText": "宝藏指北",
+    "navigationBarTextStyle": "black",
+    "backgroundColorBottom": "#f7f9fe",
+    "backgroundColorTop": "#f7f9fe"
+  },
+  "sitemapLocation": "sitemap.json"
+}

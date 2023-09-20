@@ -1,0 +1,16 @@
+xiaoliu\life\model\entity\Article$ArticleBuilder.class
+xiaoliu\life\model\entity\Image.class
+xiaoliu\life\model\dto\ZincResponseDto.class
+xiaoliu\life\model\dto\ZincInsertDto$ZincInsertDtoBuilder.class
+xiaoliu\life\model\entity\User.class
+xiaoliu\life\model\dto\ZincInsertDto.class
+xiaoliu\life\model\entity\Openid2articleids.class
+xiaoliu\life\model\dto\ResponseDto.class
+xiaoliu\life\model\dto\ResponseDto$ResponseDtoBuilder.class
+xiaoliu\life\model\entity\Article.class
+xiaoliu\life\model\entity\Openid2articleids$Openid2articleidsBuilder.class
+xiaoliu\life\model\entity\Role.class
+xiaoliu\life\model\entity\User$UserBuilder.class
+xiaoliu\life\model\entity\Essay.class
+xiaoliu\life\model\entity\Category.class
+xiaoliu\life\model\dto\ZincResponseDto$ZincResponseDtoBuilder.class

@@ -1,0 +1,17 @@
+<view class="contain">
+    <view class="layout">
+        <view class="top-bg"></view>
+        <view class="main">
+            <view class="content">
+                <text user-select="true">{{article.data}}</text>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="ad" wx:if="{{isShow}}">
+                <ad unit-id="adunit-69cb04f25b52333e" ad-type="video" ad-theme="white"></ad>
+            </view>
+            <bar-btn show="{{!isHide}}" btns="{{btns}}" bindclick="handleBarBtnClick"></bar-btn>
+        </view>
+    </view>
+    <toast id="toast" />
+</view>

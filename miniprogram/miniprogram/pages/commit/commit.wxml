@@ -1,0 +1,37 @@
+<view class="layout">
+    <view id="commit">
+        <view wx:if="{{isAdmin}}" class="category">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{categoryNameList}}">
+                <view class="picker">
+                    选择分类
+                    <text>{{categoryNameList[index]}}</text>
+                </view>
+            </picker>
+        </view>
+        <view class="title">
+            <view class="title-name">标题</view>
+            <van-field
+                value="{{ value }}"
+                custom-style="padding:0px;font-size:16px;text-align:center"
+                placeholder="名称"
+                bind:change="onTitleChange"
+                border="{{false}}"
+            />
+        </view>
+        <view class="data">
+            <van-field
+                value="{{ value }}"
+                type="textarea"
+                autosize="true"
+                custom-style="padding:0px;font-size:16px;text-align:center;"
+                placeholder="请输入要上传的内容"
+                border="{{false}}"
+                bind:change="onDataChange"
+            />
+        </view>
+    </view>
+    <view class="commit">
+        <van-button type="primary" size="normal" round bind:tap="submit">提交</van-button>
+    </view>
+</view>
+<toast id="toast" />

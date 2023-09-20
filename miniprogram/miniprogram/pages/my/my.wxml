@@ -1,0 +1,20 @@
+<image src='/images/bg.png' mode='widthFix' class='bg-img-new'></image>
+<view class="user-info">
+  <view class="app-name">宝藏指北</view>
+  <text>版本：{{version}}</text>
+  <text>最近更新：{{updateDateTime}}</text>
+</view>
+<view class="user-nav one-card">
+  <view class="user-nav-item" data-type="favorites" bindtap="handleNav">
+    <text class="item-number" style="color:#9a65af">{{favorites}}</text>
+    <text class="item-title icon-xihuan1">
+      <text>Favorites</text>
+    </text>
+  </view>
+  <view class="user-nav-item" data-type="historys" bindtap="handleNav">
+    <text class="item-number" style="color:#87a870">{{historys}}</text>
+    <text class="item-title icon-lishi">
+      <text>Historys</text>
+    </text>
+  </view>
+</view>
